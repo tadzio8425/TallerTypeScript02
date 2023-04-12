@@ -28,7 +28,7 @@ return totSeasons/numSeries;}
 let renderSeasonAverage = () : void => {
     const tableDiv = document.getElementById("tableDiv")!;
     let pElement = document.createElement("p");
-    pElement.innerHTML = `Season average: ${getSeasonAverage()}`;
+    pElement.innerHTML = `Season average: ${getSeasonAverage().toFixed(2)}`;
     tableDiv.appendChild(pElement);
 };
     

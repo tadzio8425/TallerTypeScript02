@@ -18,7 +18,7 @@ var getSeasonAverage = function () {
 var renderSeasonAverage = function () {
     var tableDiv = document.getElementById("tableDiv");
     var pElement = document.createElement("p");
-    pElement.innerHTML = "Season average: ".concat(getSeasonAverage());
+    pElement.innerHTML = "Season average: ".concat(getSeasonAverage().toFixed(2));
     tableDiv.appendChild(pElement);
 };
 renderSeriesInTable();
