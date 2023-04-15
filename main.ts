@@ -17,7 +17,13 @@ let renderSeriesInTable = () : void => {
         seriesTbody.appendChild(trElement);
         let preloadedImg = new Image();
         preloadedImg.src = serie.image;
+
+        if(serie.id == 1){
+            trElement.click();
+        }
+
     });
+
 }
 
 let getSeasonAverage = () : number => {
@@ -70,3 +76,5 @@ let displayCard = (serie: Serie, currentTr: HTMLElement) => {
 
 renderSeriesInTable();
 renderSeasonAverage();
+
+

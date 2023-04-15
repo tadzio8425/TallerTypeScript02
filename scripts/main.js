@@ -10,6 +10,9 @@ var renderSeriesInTable = function () {
         seriesTbody.appendChild(trElement);
         var preloadedImg = new Image();
         preloadedImg.src = serie.image;
+        if (serie.id == 1) {
+            trElement.click();
+        }
     });
 };
 var getSeasonAverage = function () {
